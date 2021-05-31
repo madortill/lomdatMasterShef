@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/SVG/master-shef-logo-2.svg"/>
+    <link rel="stylesheet" type="text/css" href="assets/JQuery/jquery-ui.css"/>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <script src="assets/JQuery/jquery-3.4.1.min.js" type="text/javascript"></script>
+    <script src="assets/JQuery/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="code.js" type="text/javascript"></script>
+    <title>לומדת מאסטר שף</title>
+</head>
+<body>
+    <img class="logo" id="bahad6" src="assets/symbols/בהד 6.png" alt="bahad6"/>
+    <img class="logo" id="logo-recipe" title="לחזרה למתכון" src="assets/SVG/recipe-logo.svg" alt="recipe-logo"/>
+    <img class="logo" id="til" src="assets/symbols/tilblack.svg" alt="til"/>
+    <div id="class-plan">
+        <div id="lesson-plans">
+            <div id="juice-plan" class="lesson-stages">סחיטת המיץ</div>
+            <div id="steps-plan" class="lesson-stages">שלבי הכנה</div>
+            <div id="ing-plan" class="lesson-stages">בחירת מצרכים</div>
+            <div id="recipe-plan" class="lesson-stages">שלבי המתכון</div>
+        </div>
+        <div id="lesson-plan-arrows">
+            <img class="lesson-plan" src="assets/SVG/arrow.svg" alt="arrow"/>
+            <img class="lesson-plan" src="assets/SVG/arrow.svg" alt="arrow"/>
+            <img class="lesson-plan" src="assets/SVG/arrow.svg" alt="arrow"/>
+        </div>
+    </div>
+    <div id="main">
+        <h1 id="main-text">ברוכים הבאים ללומדת מאסטר שף</h1>
+        <img id="stages-images" src="" alt=""/>
+        <div id="main-btn">
+            <button id="left-button" class="main-buttons">התחל</button>
+            <button id="right-button" class="main-buttons">אודות</button>
+        </div>
+        <div id="arrow-btn">
+            <img id="next-btn" class="arrow-buttons" src="assets/SVG/next-btn.svg" alt="next-btn"/>
+            <img id="pre-btn" class="arrow-buttons" src="assets/SVG/pre-btn.svg" alt="pre-btn"/>
+        </div>
+        <div id="about-section">
+            <img id="about-exit" src="assets/SVG/x-mark.svg" alt="x"/>
+            <div  class="about-info">
+                <p>פיצוח הדרכתי : רב"ט ניצן סלומון</p>
+                <p>פיתוח : רב"ט ניצן סלומון</p>
+                <p>מומחה תוכן : סמל בוריס שמשון</p>
+                <p>גרסה : 1.0</p>
+            </div>
+            <div class="about-info">
+                <p>רמ"ד טי"ל : רס"ן מיגל לויתן</p>
+                <p>רת"ח פרוייקטים : רס"ר שלומי אוגרן</p>
+                <p>רת"ח מו"פ וחדשנות בלמידה : סמ"ר גל גנסין</p>
+                <p>שנה : 2021</p>
+            </div>
+        </div>
+        <div id="ingridents">
+            <div id="ing-counter-total"><p id="ing-counter">0</p>/11</div>
+            <div class="shelfed-ingridents">
+                <img id="ing1" title="עגבניות מרוסקות" class="right-ingrediant ingrident" src="assets/SVG/smached-tomatos.svg" alt="smached-tomatos"/>
+                <img id="ing2" title="בזיליקום" class="right-ingrediant ingrident" src="assets/SVG/baszil-leafs.svg" alt="baszil-leafs"/>
+                <img id="ing3" title="פרמזן" class="right-ingrediant ingrident" src="assets/SVG/cheese.svg" alt="cheese"/>
+                <img id="ing4" title="מלפפון" class="wrong-ingrediant ingrident" src="assets/SVG/cucamber.svg" alt="cucamber"/>
+                <img id="ing5" title="פסטה" class="right-ingrediant ingrident" src="assets/SVG/pasta-box.svg" alt="pasta-box"/>
+                <img id="ing6" title="סוכר" class="right-ingrediant ingrident" src="assets/SVG/suger.svg" alt="sugar"/>
+                <img id="ing7" title="קטשופ" class="wrong-ingrediant ingrident" src="assets/SVG/ketchup.svg" alt="ketchup"/>
+                <img id="ing8" title="שום" class="right-ingrediant ingrident" src="assets/SVG/garlic.svg" alt="garlic"/>
+            </div>
+            <img class="shelfs" src="assets/SVG/shelf.svg" alt="shelf"/>
+            <div class="shelfed-ingridents">
+                <img id="ing9" title="שמנת מתוקה" class="right-ingrediant ingrident" src="assets/SVG/sweet-cream.svg" alt="sweet-cream"/>
+                <img id="ing10" title="קלמנטינה" class="wrong-ingrediant ingrident" src="assets/SVG/klamntine.svg" alt="klamntine"/>
+                <img id="ing11" title="מלח" class="right-ingrediant ingrident" src="assets/SVG/salt.svg" alt="salt"/>
+                <img id="ing12" title="שמנת חמוצה" class="wrong-ingrediant ingrident" src="assets/SVG/sawer-cream.svg" alt="sawer-cream"/>
+                <img id="ing13" title="ברוקולי" class="wrong-ingrediant ingrident" src="assets/SVG/broccoli.svg" alt="broccoli"/>
+                <img id="ing14" title="תפוז" class="right-ingrediant ingrident" src="assets/SVG/orange.svg" alt="orange"/>
+                <img id="ing15" title="חמאה" class="right-ingrediant ingrident" src="assets/SVG/butter.svg" alt="butter/>"/>
+                <img id="ing16" title="רסק עגבניות" class="right-ingrediant ingrident" src="assets/SVG/tomatos-sauce.svg" alt="tomatos-sauce"/>
+            </div>
+            <img class="shelfs" src="assets/SVG/shelf.svg" alt="shelf"/>
+        </div>
+        <div id="multipal-choice-answers">
+            <button id="answer1" class="multipal-choice-btn"></button>
+            <button id="answer2" class="multipal-choice-btn"></button>
+            <button id="answer3" class="multipal-choice-btn multipal"></button>
+            <button id="answer4" class="multipal-choice-btn multipal"></button>
+        </div>
+        <div id="question2-animation" class="questions-animation">
+            <img id="skilet-without-fire" class="skilets-pots" src="assets/SVG/skilet.svg" alt="skilet"/>
+            <img id="fire" src="assets/SVG/fire.svg" alt="fire"/>
+        </div>
+        <div id="question3-animation" class="questions-animation">
+            <img class="skilets-pots" src="assets/SVG/skillet-fire.svg" alt="skillet-fire"/>
+            <img class="animation3" src="assets/SVG/butter-cube.svg" alt="butter-cube"/>
+            <img class="animation3" src="assets/SVG/one-garlic.svg" alt="one-garlic"/>
+            <img class="animation3" src="assets/SVG/butter-cube.svg" alt="butter-cube"/>
+            <img class="animation3" src="assets/SVG/one-garlic.svg" alt="one-garlic"/>
+            <img class="animation3" src="assets/SVG/butter-cube.svg" alt="butter-cube"/>
+            <img class="animation3" src="assets/SVG/one-garlic.svg" alt="one-garlic"/>
+            <img class="animation3" src="assets/SVG/butter-cube.svg" alt="butter-cube"/>
+        </div>
+        <div id="question4-animation" class="questions-animation">
+            <img id="pot" class="skilets-pots" src="assets/SVG/pot-steam.svg" alt="pot-steam"/>
+            <img id="pasta-grop" src="assets/SVG/pasta-grop.svg" alt="pasta-grop"/>
+        </div>
+        <div id="question5-animation" class="questions-animation">
+            <img class="skilets-pots" src="assets/SVG/skillet-fire.svg" alt="skillet-fire"/>
+            <img id="cream-pour" src="assets/SVG/cream-pour.svg" alt="cream-pour"/>
+            <img id="sweet-cream" src="assets/SVG/sweet-cream.svg" alt="sweet-cream"/>
+        </div>
+        <div id="question6-animation" class="questions-animation">
+            <img class="skilets-pots" src="assets/SVG/skillet-fire.svg" alt="skillet-fire"/>
+            <img id="smached-tomatos" class="animation6" src="assets/SVG/smached-tomatos.svg" alt="smached-tomatos"/>
+            <img id="tomatos-sauce" class="animation6" src="assets/SVG/tomatos-sauce.svg" alt="tomatos-sauce"/>
+            <img id="salt" class="animation6" src="assets/SVG/salt.svg" alt="salt"/>
+            <img id="sugar" class="animation6" src="assets/SVG/suger.svg" alt="sugar"/>
+            <img id="bazil-leaf1" class="animation6" src="assets/SVG/bazil-leaf.svg" alt="bazil-leaf"/>
+            <img id="bazil-leaf2" class="animation6" src="assets/SVG/bazil-leaf.svg" alt="bazil-leaf"/>
+            <img id="sauce" src="assets/SVG/sauce.svg" alt="sauce"/>
+        </div>
+        <div id="question7-animation" class="questions-animation">
+            <img class="skilets-pots" src="assets/SVG/skilet-sauce.svg" alt="skillet-sauce"/>
+            <img id="grated-cheese" src="assets/SVG/grated-cheese.svg" alt="grated-cheese"/>
+            <img id="grater" src="assets/SVG/grater.svg" alt="grater"/>
+            <img id="cheese" src="assets/SVG/cheese.svg" alt="cheese"/>
+        </div>
+        <div id="question8-animation" class="questions-animation">
+            <img id="spoon" src="assets/SVG/spoon.svg" alt="spoon"/>
+            <img class="pasta-bowl" src="assets/SVG/pasta-bowl.svg" alt="pasts-bowl"/>
+            <img id="pasts-sauce" class="pasta-bowl" src="assets/SVG/pasta-sauce.svg" alt="pasts-sauce"/>
+        </div>
+        <div id="juice-exer">
+            <div id="juice-exer-drop" class="juice-exer-container">
+                <div id="drop4" class="droppable juice-exer-answers"></div id="drop">
+                <div id="drop3" class="droppable juice-exer-answers"></div id="drop">
+                <div id="drop2" class="droppable juice-exer-answers"></div id="drop">
+                <div id="drop1" class="droppable juice-exer-answers"></div id="drop">
+            </div>
+            <div id="juice-exer-drag" class="juice-exer-container">
+                <div id="drag3" class="dragable juice-exer-answers">סינון המיץ</div>
+                <div id="drag4" class="dragable juice-exer-answers">מזיגת המיץ לכוס</div id="drop">
+                <div id="drag1" class="dragable juice-exer-answers">חתיכת התפוזים לחצי</div id="drop">
+                <div id="drag2" class="dragable juice-exer-answers">סחיטת התפוזים</div id="drop">
+            </div>
+            <div id="juice-exer-drop-arrows" class="juice-exer-arrows">
+                <img class="lesson-plan" src="assets/SVG/arrow2.svg" alt="arrow"/>
+                <img class="lesson-plan" src="assets/SVG/arrow2.svg" alt="arrow"/>
+                <img class="lesson-plan" src="assets/SVG/arrow2.svg" alt="arrow"/>
+            </div>
+            <div id="juice-animation">
+                <img id="juice-animation5" class="juice-images" src="assets/SVG/juice-cup-edge.svg" alt="juice-cup"/>
+                <img id="juice-animation4" class="juice-images" src="assets/SVG/cup-with-sivf.svg" alt="cup-with-sivf"/>
+                <img id="juice-animation3" class="juice-images" src="assets/SVG/squized-orange.svg" alt="squized-orange"/>
+                <img id="juice-animation2" class="juice-images" src="assets/SVG/half-orange.svg" alt="half-orange"/>
+                <img id="juice-animation1" class="juice-images" src="assets/SVG/orange.svg" alt="orange"/>
+            </div>
+        </div>
+        <div id="end-scoring">
+            <div id="gudging">
+                <img class="gudges" src="assets/SVG/michal.svg" alt="michal"/>
+                <img class="gudges" src="assets/SVG/haim-choen.svg" alt="haim-choen"/>
+                <img class="gudges" src="assets/SVG/aharoni.svg" alt="aharoni"/>
+                <img class="gudges" src="assets/SVG/eial-shani.svg" alt="eial-shani"/>
+            </div>
+            <div id="score">
+                <div id="all" class="scorring"></div>
+                <div id="make-juice" class="scorring"></div>
+                <div id="make-dish" class="scorring"></div>
+                <div id="choose-ingridents" class="scorring"></div>
+            </div>
+        </div>
+    </div>
+    <div id="full-recipe">
+        <h1 id="recipe-text"></h1>
+        <img id="recipe-logo" src="assets/SVG/recipe-logo.svg" alt="recipe-logo"/>
+        <div id="main-recipe">
+            <div>
+                <h3>מצרכים</h3>
+                <p><img class="check-squres check-mark ingredients-check-mark" src="assets/SVG/check-mark.svg" alt="check-mark"/><img class="check-squres" src="assets/SVG/squre.svg" alt="squre"/> 500 גרם פסטה</p>
+                <p><img class="check-squres check-mark ingredients-check-mark" src="assets/SVG/check-mark.svg" alt="check-mark"/><img class="check-squres" src="assets/SVG/squre.svg" alt="squre"/> 2 מיכלים שמנת מתוקה</p>
+                <p><img class="check-squres check-mark ingredients-check-mark" src="assets/SVG/check-mark.svg" alt="check-mark"/><img class="check-squres" src="assets/SVG/squre.svg" alt="squre"/> כף חמאה</p>
+                <p><img class="check-squres check-mark ingredients-check-mark" src="assets/SVG/check-mark.svg" alt="check-mark"/><img class="check-squres" src="assets/SVG/squre.svg" alt="squre"/> 3 שיני שום כתושות</p>
+                <p><img class="check-squres check-mark ingredients-check-mark" src="assets/SVG/check-mark.svg" alt="check-mark"/><img class="check-squres" src="assets/SVG/squre.svg" alt="squre"/> 400 גרם עגבניות מרוסקות</p>
+                <p><img class="check-squres check-mark ingredients-check-mark" src="assets/SVG/check-mark.svg" alt="check-mark"/><img class="check-squres" src="assets/SVG/squre.svg" alt="squre"/> 1 קופסא רסק עגבניות</p>
+                <p><img class="check-squres check-mark ingredients-check-mark" src="assets/SVG/check-mark.svg" alt="check-mark"/><img class="check-squres" src="assets/SVG/squre.svg" alt="squre"/> 1 כפית בזיליקום קצוץ</p>
+                <p><img class="check-squres check-mark ingredients-check-mark" src="assets/SVG/check-mark.svg" alt="check-mark"/><img class="check-squres" src="assets/SVG/squre.svg" alt="squre"/> 50 גרם גבינת פרמזן</p>
+                <p><img class="check-squres check-mark ingredients-check-mark" src="assets/SVG/check-mark.svg" alt="check-mark"/><img class="check-squres" src="assets/SVG/squre.svg" alt="squre"/> 1/2 כפית מלח</p>
+                <p><img class="check-squres check-mark ingredients-check-mark" src="assets/SVG/check-mark.svg" alt="check-mark"/><img class="check-squres" src="assets/SVG/squre.svg" alt="squre"/> 1 כפית סוכר</p>
+                <p><img class="check-squres check-mark ingredients-check-mark" src="assets/SVG/check-mark.svg" alt="check-mark"/><img class="check-squres" src="assets/SVG/squre.svg" alt="squre"/> 2 תפוזים</p>
+            </div>
+            <div>
+                <h3>אופן הכנה</h3>
+                <p><img id="recipe-step1" class="check-squres check-mark" src="assets/SVG/check-mark.svg" alt="check-mark"/><img class="check-squres" src="assets/SVG/squre.svg" alt="squre"/> מרתיחים מים ומבשלים את הפסטה</p>
+                <p><img id="recipe-step3" class="check-squres check-mark" src="assets/SVG/check-mark.svg" alt="check-mark"/><img class="check-squres" src="assets/SVG/squre.svg" alt="squre"/> מחממים מחבת עם חמאה ומטגנים את השום כדקה תוך כדי בחישה</p>
+                <p><img id="recipe-step5" class="check-squres check-mark" src="assets/SVG/check-mark.svg" alt="check-mark"/><img class="check-squres" src="assets/SVG/squre.svg" alt="squre"/> מוסיפים למחבת את השמנת ומבשלים עד בעבוע</p>
+                <p><img id="recipe-step6" class="check-squres check-mark" src="assets/SVG/check-mark.svg" alt="check-mark"/><img class="check-squres" src="assets/SVG/squre.svg" alt="squre"/> מוסיפים את העגבניות המרוסקות, את רסק העגבניות ואת התבלינים למחבת ומבשלים תוך כדי ערבוב</p>
+                <p><img id="recipe-step7" class="check-squres check-mark" src="assets/SVG/check-mark.svg" alt="check-mark"/><img class="check-squres" src="assets/SVG/squre.svg" alt="squre"/> מוסיפים למחבת את הפרמזן ומערבבים דקה נוספת</p>
+                <p><img id="recipe-step8" class="check-squres check-mark" src="assets/SVG/check-mark.svg" alt="check-mark"/><img class="check-squres" src="assets/SVG/squre.svg" alt="squre"/> מערבבים את הפסטה עם הרוטב</p>
+                <p><img id="recipe-step9" class="check-squres check-mark" src="assets/SVG/check-mark.svg" alt="check-mark"/><img class="check-squres" src="assets/SVG/squre.svg" alt="squre"/> חותכים את התפוזים לחצי, סוחטים ומסננים את המיץ</p>
+            </div>
+        </div>
+        <button id="got-it-button" class="main-buttons">הבנתי בואו נתחיל לבשל</button>
+    </div>
+</body>
+</html>
